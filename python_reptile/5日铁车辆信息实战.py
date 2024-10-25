@@ -15,10 +15,10 @@ cars = []
 
 soup = BeautifulSoup(contents,"html.parser")
 
-all_replace = soup.findAll("h2",attrs={"class":"entry-card-title card-title e-card-title"})
-print("\n編成表更新情報:")
-for c in all_replace:
-    print(c.string)
+# all_replace = soup.findAll("h2",attrs={"class":"entry-card-title card-title e-card-title"})
+# print("\n編成表更新情報:")
+# for c in all_replace:
+#     print(c.string)
 
 all_dayinfos = soup.find("div",attrs={"class":"col-sm-4"})  #只找当天的编成变化信息，因此仅需find
 print("\n今日のフォーラム・グループの新着情報:")
